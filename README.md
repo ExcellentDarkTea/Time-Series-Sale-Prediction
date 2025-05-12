@@ -51,17 +51,17 @@ The following machine learning models are implemented in this analysis:
 Each model's performance is evaluated using Mean Absolute Percentage Error (MAPE)
 
 ## Results
-| Model | MAPE |
-|--------------------------------|-------|
-| naive_365 | 33.92 |
-| naive_7 | 38.17 |
-| combined | 34.26 |
-| drift | 68.74 |
-| XGB | 25.81 |
-| **XGB with covariates** | **22.77**|
-| ExponentialSmoothing | 28.97 |
-| ARIMA | 31.13 |
-| AutoARIMA | 39.53 |
-| Prophet | 23.49 |
-| **LSTM** |**22.42**|
+| Rank | Model                  | MAPE  |
+|------|------------------------|-------|
+| 1    | **LSTM**               | **22.42** |
+| 2    | **XGB with covariates**| **22.77** |
+| 3    | Prophet                | 23.49 |
+| 4    | XGB                    | 25.81 |
+| 5    | ExponentialSmoothing   | 28.97 |
+| 6    | ARIMA                  | 31.13 |
+| 7    | naive_365              | 33.92 |
+| 8    | combined               | 34.26 |
+| 9    | naive_7                | 38.17 |
+| 10   | AutoARIMA              |
+
 
