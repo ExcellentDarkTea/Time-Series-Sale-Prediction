@@ -51,7 +51,7 @@ The following machine learning models are implemented in this analysis:
 Each model's performance is evaluated using Mean Absolute Percentage Error (MAPE)
 
 ## Results
-
+| Model | MAPE |
 |--------------------------------|-------|
 | naive_365 | 33.92 |
 | naive_7 | 38.17 |
