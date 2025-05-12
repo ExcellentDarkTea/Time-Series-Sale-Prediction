@@ -50,7 +50,6 @@ The following machine learning models are implemented in this analysis:
 
 Each model's performance is evaluated using Mean Absolute Percentage Error (MAPE)
 
-## Results
 | Rank | Model                  | MAPE  |
 |------|------------------------|-------|
 | 1    | **LSTM**               | **22.42** |
@@ -62,6 +61,7 @@ Each model's performance is evaluated using Mean Absolute Percentage Error (MAPE
 | 7    | naive_365              | 33.92 |
 | 8    | combined               | 34.26 |
 | 9    | naive_7                | 38.17 |
-| 10   | AutoARIMA              |
+| 10   | AutoARIMA              | 39.53 |
+| 11   | drift                  | 68.74 |
 
 
