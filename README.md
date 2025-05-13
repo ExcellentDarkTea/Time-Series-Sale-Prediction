@@ -52,16 +52,17 @@ Each model's performance is evaluated using Mean Absolute Percentage Error (MAPE
 
 | Rank | Model                  | MAPE  |
 |------|------------------------|-------|
-| 1    | **LSTM**               | **22.42** |
-| 2    | **XGB with covariates**| **22.77** |
-| 3    | Prophet                | 23.49 |
-| 4    | XGB                    | 25.81 |
-| 5    | ExponentialSmoothing   | 28.97 |
-| 6    | ARIMA                  | 31.13 |
-| 7    | naive_365              | 33.92 |
-| 8    | combined               | 34.26 |
-| 9    | naive_7                | 38.17 |
-| 10   | AutoARIMA              | 39.53 |
-| 11   | drift                  | 68.74 |
+| 1    | **LSTM**               | **22.03** |
+| 2    |  **Bi-LSTM**           | **22.23** |
+| 3    | **XGB with covariates**| **22.77** |
+| 4    | Prophet                | 23.49 |
+| 5    | XGB                    | 25.81 |
+| 6    | ExponentialSmoothing   | 28.97 |
+| 7    | ARIMA                  | 31.13 |
+| 8    | naive_365              | 33.92 |
+| 9    | combined               | 34.26 |
+| 10    | naive_7                | 38.17 |
+| 11   | AutoARIMA              | 39.53 |
+| 12   | drift                  | 68.74 |
 
 
