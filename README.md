@@ -1,69 +1,96 @@
-Time Series Analysis for Sale Prediction
+
+# 🕒 Time Series Analysis for Sales Prediction
+
+This repository contains a Python-based pipeline for time series analysis and forecasting of sales data. The project includes data preprocessing, feature engineering, and implementation of several machine learning and deep learning models to predict future sales.
 
 ---
-This repository contains a Python script that performs time series analysis on a dataset to predict future sales. The analysis includes data preprocessing, feature engineering, and the application of various machine learning models.
 
-## Table of Contents
+## 📚 Table of Contents
 
-- [Introduction](#introduction)
-- [Dataset](#dataset)
-- [Installation](#installation)
-- [Models](#models)
-- [Results](#results)
+* [🔍 Introduction](#introduction)
+* [📊 Dataset](#dataset)
+* [⚙️ Installation](#installation)
+* [🧠 Models Implemented](#models-implemented)
+* [📈 Results](#results)
+* [📎 License](#license)
 
-## Introduction
+---
 
-The goal of this project is to analyze historical sales data and build predictive models to forecast future sales. The analysis involves:
-1. Exploratory data analysis (EDA)
-2. Feature engineering
-4. Model training and evaluation
+## 🔍 Introduction
 
-## Dataset
+The primary goal of this project is to analyze historical sales data and forecast future sales using a variety of time series models. Key steps include:
 
-The dataset used in this project is `sales_data.csv`, which contains historical sales data with the following columns:
+1. **Exploratory Data Analysis (EDA)**
+2. **Feature Engineering**
+3. **Model Training and Evaluation**
 
-- `date`: Date of the sale
-- `store`: Store ID
-- `item`: Item ID
-- `sales`: Number of items sold
+The project provides a comparative analysis of classical time series methods, machine learning approaches, and deep learning architectures.
 
-## Installation
+---
 
-To run the code, ensure you have Python 3.x installed along with the required libraries. You can install the necessary packages using pip:
+## 📊 Dataset
+
+The dataset used is `sales_data.csv`, which includes historical sales figures with the following columns:
+
+* `date`: Date of the sale
+* `store`: Store identifier
+* `item`: Item identifier
+* `sales`: Number of items sold
+
+---
+
+## ⚙️ Installation
+
+To run the project, ensure Python 3.x is installed. Then, install the required packages using:
 
 ```bash
 pip install pandas numpy matplotlib scikit-learn statsmodels torch darts
 ```
 
+---
 
-## Models
+## 🧠 Models Implemented
 
-The following machine learning models are implemented in this analysis:
+This project evaluates a variety of models:
 
-- NaiveSeasonal
-- ARIMA
-- AutoARIMA
-- XGBModel
-- Prophet
-- ExponentialSmoothing
-- LSTM and Bi-LSTM (PyTorch)
+* 📉 **Statistical Models**
 
-## Results
-Each model's performance is evaluated using Mean Absolute Percentage Error (MAPE)
+  * Naive (weekly and yearly seasonality)
+  * ARIMA / AutoARIMA
+  * Exponential Smoothing
+  * Drift
 
-| Rank | Model                  | MAPE  |
-|------|------------------------|-------|
-| 1    | **LSTM**               | **22.03** |
-| 2    |  **Bi-LSTM**           | **22.23** |
-| 3    | **XGB with covariates**| **22.77** |
-| 4    | Prophet                | 23.49 |
-| 5    | XGB                    | 25.81 |
-| 6    | ExponentialSmoothing   | 28.97 |
-| 7    | ARIMA                  | 31.13 |
-| 8    | naive_365              | 33.92 |
-| 9    | combined               | 34.26 |
-| 10    | naive_7                | 38.17 |
-| 11   | AutoARIMA              | 39.53 |
-| 12   | drift                  | 68.74 |
+* 📈 **Machine Learning**
 
+  * XGBoost (with and without covariates)
+
+* 🔮 **Hybrid / Specialized**
+
+  * Prophet
+
+* 🤖 **Deep Learning**
+
+  * LSTM
+  * Bi-LSTM (bidirectional)
+
+---
+
+## 📈 Results
+
+Model performance is evaluated using **Mean Absolute Percentage Error (MAPE)**. Lower MAPE indicates better predictive performance.
+
+| Rank | Model                       | MAPE (%)  |
+| ---- | --------------------------- | --------- |
+| 🥇 1 | **LSTM**                    | **22.03** |
+| 🥈 2 | **Bi-LSTM**                 | **22.23** |
+| 🥉 3 | **XGBoost with covariates** | **22.77** |
+| 4    | Prophet                     | 23.49     |
+| 5    | XGBoost                     | 25.81     |
+| 6    | Exponential Smoothing       | 28.97     |
+| 7    | ARIMA                       | 31.13     |
+| 8    | Naive (yearly)              | 33.92     |
+| 9    | Combined (ensemble)         | 34.26     |
+| 10   | Naive (weekly)              | 38.17     |
+| 11   | AutoARIMA                   | 39.53     |
+| 12   | Drift                       | 68.74     |
 
