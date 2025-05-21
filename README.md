@@ -7,12 +7,11 @@ This repository contains a Python-based pipeline for time series analysis and fo
 
 ## 📚 Table of Contents
 
-* [🔍 Introduction](#introduction)
-* [📊 Dataset](#dataset)
-* [⚙️ Installation](#installation)
-* [🧠 Models Implemented](#models-implemented)
-* [📈 Results](#results)
-* [📎 License](#license)
+* [🔍 Introduction](##introduction)
+* [📊 Dataset](##dataset)
+* [⚙️ Installation](##installation)
+* [🧠 Models Implemented](##models-implemented)
+* [📈 Results](##results)
 
 ---
 
