@@ -46,8 +46,9 @@ The following machine learning models are implemented in this analysis:
 - XGBModel
 - Prophet
 - ExponentialSmoothing
-- LSTM (torch)
+- LSTM and Bi-LSTM (PyTorch)
 
+## Results
 Each model's performance is evaluated using Mean Absolute Percentage Error (MAPE)
 
 | Rank | Model                  | MAPE  |
