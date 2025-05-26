@@ -1,7 +1,7 @@
 
 # 🕒 Time Series Analysis for Sales Prediction
 
-This repository contains a Python-based pipeline for time series analysis and forecasting of sales data. The project includes data preprocessing, feature engineering, and implementation of several machine learning and deep learning models to predict future sales.
+This repository contains a Python-based pipeline for time series analysis and forecasting of sales data. The project includes data preprocessing, feature engineering, and implementing several machine learning and deep learning models to predict future sales.
 
 ---
 
@@ -10,7 +10,7 @@ This repository contains a Python-based pipeline for time series analysis and fo
 * [🔍 Introduction](##introduction)
 * [📊 Dataset](##dataset)
 * [⚙️ Installation](##installation)
-* [🧠 Models Implemented](##models-implemented)
+* [🧠 Models Implemented](##models_implemented)
 * [📈 Results](##results)
 
 ---
@@ -23,7 +23,7 @@ The primary goal of this project is to analyze historical sales data and forecas
 2. **Feature Engineering**
 3. **Model Training and Evaluation**
 
-The project provides a comparative analysis of classical time series methods, machine learning approaches, and deep learning architectures.
+The project compares classical time series methods, machine learning approaches, and deep learning architectures.
 
 ---
 
@@ -52,22 +52,19 @@ pip install pandas numpy matplotlib scikit-learn statsmodels torch darts
 
 This project evaluates a variety of models:
 
-* 📉 **Statistical Models**
+* **Statistical Models**
 
   * Naive (weekly and yearly seasonality)
   * ARIMA / AutoARIMA
   * Exponential Smoothing
   * Drift
 
-* 📈 **Machine Learning**
+*  **Machine Learning**
 
   * XGBoost (with and without covariates)
-
-* 🔮 **Hybrid / Specialized**
-
   * Prophet
 
-* 🤖 **Deep Learning**
+* **Deep Learning**
 
   * LSTM
   * Bi-LSTM (bidirectional)
