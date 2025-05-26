@@ -61,8 +61,8 @@ This project evaluates a variety of models:
 
 *  **Machine Learning**
 
-  * XGBoost (with and without covariates)
-  * Prophet
+   * XGBoost (with and without covariates)
+   * Prophet
 
 * **Deep Learning**
 
