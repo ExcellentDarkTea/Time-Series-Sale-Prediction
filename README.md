@@ -90,3 +90,4 @@ Model performance is evaluated using **Mean Absolute Percentage Error (MAPE)**. 
 | 11   | AutoARIMA                   | 39.53     |
 | 12   | Drift                       | 68.74     |
 
+**Notice**: This repository does not accept public pull requests. Any submitted PRs will be automatically closed.
